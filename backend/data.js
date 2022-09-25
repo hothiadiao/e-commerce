@@ -1,59 +1,54 @@
 import bcrypt from 'bcryptjs'
 
 const data = {
-
     users: [
         {
-        name:"Hothia",
-        email:"admino@gmail.com",
-        password: bcrypt.hashSync('admin'),
-        isAdmin: true
-    },
-    {
-        name:"Diao",
-        email:"hothiadiao@gmail.com",
-        password: bcrypt.hashSync('diao'),
-        isAdmin: false
-    },
+            name: "Hothia1",
+            email: 'admin@gmail.com',
+            password: bcrypt.hashSync('admin'),
+            isAdmin: true
+        },
+        {
+            name: "Ricpe",
+            email: 'ricpewebcode@gmail.com',
+            password: bcrypt.hashSync('ricpe'),
+            isAdmin: false
+        },
     ],
 
-    sliderItems : [
-        {
-            //_id: 1, 
-            image: "/images/slider/1.jpg"
-    
-        },
-        {
-            //_id: 2, 
-            image: "/images/slider/2.jpg"
-    
-        },
-        {
-           // _id: 3,
-            image: "/images/slider/3.jpeg"
-    
-        },
-    ],
-    category : [
+    sliderItems: [
         {
             //_id: 1,
-            title: "Men",
-            image:"/images/category/men.jpg"
+            image: "/images/slider/1.jpg"
         },
         {
             //_id: 2,
+            image: "/images/slider/2.jpg"
+        },
+        {
+            //_id: 3,
+            image: "/images/slider/3.jpg"
+        },
+    ],
+
+    category: [
+        {
+            //_id: 1,
+            title: "Men",
+            image: "/images/category/men.jpg"
+        }, 
+        {
+            //_id: 2,
             title: "Women",
-            image:"/images/category/women.jpg"
-    
+            image: "/images/category/women.jpg"
         },
         {
             //_id: 3,
             title: "Kids",
-            image:"/images/category/kids.jpg"
-    
+            image: "/images/category/kids.jpg"
         }
     ],
-    
+
     products: [
         {
             //_id: 1,
@@ -69,7 +64,7 @@ const data = {
             price: "80.00",
         },
         {
-           // _id: 2,
+            //_id: 2,
             title: "Product 2",
             slug: 'product2',
             desc: "Description for Product 2",
@@ -82,7 +77,7 @@ const data = {
             price: "65.00",
         },
         {
-           // _id: 3,
+            //_id: 3,
             title: "Product 3",
             slug: 'product3',
             desc: "Description for Product 3",
@@ -95,7 +90,7 @@ const data = {
             price: "72.99",
         },
         {
-           // _id: 4,
+            //_id: 4,
             title: "Product 4",
             slug: 'product4',
             desc: "Description for Product 4",
@@ -121,7 +116,7 @@ const data = {
             price: "87.00",
         },
         {
-           // _id: 6,
+            //_id: 6,
             title: "Product 6",
             slug: 'product6',
             desc: "Description for Product 4",
@@ -147,7 +142,7 @@ const data = {
             price: "76.00",
         },
         {
-           // _id: 8, //default in db
+            //_id: 8, default in db
             title: "Product 8",
             slug: 'product8',
             desc: "Description for Product 4",
@@ -159,6 +154,7 @@ const data = {
             countInStock: 13,
             price: "45.00",
         },
-]
+    ]
 }
+
 export default data;
